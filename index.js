@@ -1,6 +1,6 @@
 const baseURL = 'https://api.github.com';
 const user = 'daschne8';
-// const token = "e11df44e1236b7666cdf49fb11f3cd33d3d69b67"
+// const token = "76477e1f87bebbe859333ab9f91739f7385ebc88"
 
 
 function getToken() {
