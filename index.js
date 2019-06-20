@@ -6,16 +6,16 @@ const token = "e11df44e1236b7666cdf49fb11f3cd33d3d69b67"
 function getToken() {
   //change to your token to run in browser, but set
   //back to '' before committing so all tests pass
-  return '';
+  return token;
 }
 
 function forkRepo() {
   const repo = 'learn-co-curriculum/js-ajax-fetch-lab';
   const url = `${baseURL}/repos/${repo}/forks`;
   fetch(url, {
-    method: 'GET',
+    method: 'POST',
     headers: {
-      Authorization: `token ${token}`
+      Authorization: `token ${getToken()}`
     }
   })
     .then(res => res.json())
